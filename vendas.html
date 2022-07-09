@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas - Negócio fechado</title>
+    <link rel="stylesheet" href="styles.css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="container">
+    <nav class="container">
+        <a href="index.html"><img src="images/logo.png" alt="Logomarca da Negócio Fechado"></a>
+            <div class="optional">
+                <a href="#">Workplace</a>
+                <a href="#">Planos</a>
+                <a href="#">Ferramentas</a>
+                <a href="#">Empresa</a>
+            </div>
+        <a href="index.html">Sair</a>
+    </nav>
+
+    <main class="container">
+        <div>
+            <h2>Instruções:</h2>
+            <ol id="instrucoes">
+                <li>Adicione o nome, e-mail e telefone do seu cliente.</li>
+                <li>Adicione as necessidades do seu cliente. 
+                    Qual as características do problema do seu cliente?</li>
+                <li>Elabore a proposta a ser enviada para o seu cliente. 
+                    Coloque o orçamento e em quantos dias o trabalho será entregue.</li>
+                <li>Adicione o feedback do seu cliente. Diga se o negócio foi fechado ou não e porquê.</li>
+            </ol>
+        </div>
+    
+        <div class="container todas-etapas">
+            <div class="container todas-etapas">
+                <div id="clientes" class="etapa container column">
+                    <h3>Clientes</h3>
+                    <button id="adicionar-cliente" class="botao">Adicionar cliente</button>
+                    <div id="criando-cliente"></div>
+                    <div id="clientes-cadastrados"></div>
+                </div>
+                <div id="necessidades" class="etapa">
+                    <h3>Necessidades do cliente</h3>
+                </div>
+            </div>
+            <div class="container todas-etapas">
+                <div id="proposta" class="etapa">
+                    <h3>Proposta</h3>
+                </div>
+                <div id="resultado" class="etapa">
+                    <h3>Negócio Fechado</h3>
+                </div>
+            </div>
+        </div>
+    </main>    
+    
+    <script type="text/javascript" src="script-vendas.js"></script>
+</body>
+</html>
