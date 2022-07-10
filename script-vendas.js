@@ -33,7 +33,7 @@ Resultado: ${clientes[index].Resultado}
 
 function inputResultado(divatual,index){
     document.getElementById(divatual).innerHTML+=
-    `<div class="container column">
+    `<div class="form">
     <br>
     <input type="text" placeholder="O negócio foi fechado? Escreva aqui o feedback do cliente" name="input" id="input-resposta-${index}">
     <br>
@@ -44,10 +44,10 @@ function inputResultado(divatual,index){
         clientes[index].Resultado=document.getElementById(`input-resposta-${index}`).value;
         document.getElementById(divatual).innerHTML="";
         document.getElementById("resultado").innerHTML+=
-        `<div id="resultado-${index}">
+        `<div id="resultado-${index}" class="form">
         Nome: ${clientes[index].Nome} <br>
         Resultado: ${clientes[index].Resultado} <br>
-        <div class="container column">
+        <div class="form">
         <button onclick="maisinfo(${index})" class="botao">Mais informações</button>
         </div>
         </div>`
@@ -77,7 +77,6 @@ function inputProposta(divatual,index){
         </div>`
     })
 }
-
 function inputNecessidades(divatual,index){
     document.getElementById(divatual).innerHTML+=
     `<div class="container column">
@@ -106,7 +105,7 @@ function inputNecessidades(divatual,index){
     /* Adicionar cliente */
 document.getElementById("adicionar-cliente").addEventListener("click", function(){
     document.getElementById("criando-cliente").innerHTML+=
-    `<div class="container column">
+    `<div class="form">
 
     <label for="nome"><b>Nome</b></label>
     <input type="text" placeholder="Nome" name="nome" id="nome">
@@ -160,7 +159,7 @@ document.getElementById("adicionar-cliente").addEventListener("click", function(
 
         /* Colocar na div clientes-cadastrados */
         document.getElementById("clientes-cadastrados").innerHTML+=
-        `<div id="C${i}"> 
+        `<div id="C${i}" class="form"> 
             Nome: ${clientes[i].Nome} <br>
             E-mail: ${clientes[i].Email} <br>
             Telefone: ${clientes[i].Telefone} <br>

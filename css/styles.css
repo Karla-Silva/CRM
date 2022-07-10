@@ -13,16 +13,25 @@
 }
 
 .todas-etapas{
+  display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
 .etapa{
+  display: flex;
+  flex-direction: column;
   height: fit-content;
   min-height: 200px;
-  width: 250px;
-  border: 2px solid #ffed4b;
+  width: 350px;
+  border: 7px solid #ffed4b;
   border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px lightgray;
   padding: 10px;
   margin:2px;
 }
